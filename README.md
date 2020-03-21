@@ -1,10 +1,12 @@
 # vat
+This is a simple python application to get information about company based on a known VAT number.
+Cherrypy is handling the requests and information is retrieved from the external service (ec.europa.eu's Vat service) if the vat number is not found in the database. Valid information is saved to the database for faster processing in the future.
 
+MySQL was chosen to store the information as it is widely used, hence this project could easily be maintained in the future. Performance wise, MySQL might be overkill for this project at the start, but should be solid solution for long time while scaling up. In case this API would have 'a lot' requests per seconds, Elastic Search would become feasible solution.
 
 
 **API**
 ----
-  This is simple API to retvieve company information based on a known VAT number.
 
 * **URL**
 
