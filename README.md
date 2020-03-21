@@ -2,10 +2,26 @@
 This is a simple python application to get information about company based on a known VAT number.
 Cherrypy is handling the requests and information is retrieved from the external service (ec.europa.eu's Vat service) if the vat number is not found in the database. Valid information is saved to the database for faster processing in the future.
 
+**DATABASE**
+----
 MySQL was chosen to store the information as it is widely used, hence this project could easily be maintained in the future. Performance wise, MySQL might be overkill for this project at the start, but should be solid solution for long time while scaling up. In case this API would have 'a lot' requests per seconds, Elastic Search would become feasible solution.
 
+MySQL companies-table has JSON-column as the data retrieved from the external source might be missing some fields. This surely breaks the point of 'relation tables' but simplifies the data usage alot.
+
+```
+companies
+id          | data  | date
+VARCHAR(64) | JSON  | DATETIME
+```
+**Live API**
+----
 Live API
 `https://riski.business/vatApi`
+
+**TO DO**
+----
+Better error reporting
+Adding more expection handlings
 
 **API**
 ----
