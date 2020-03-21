@@ -4,6 +4,8 @@ Cherrypy is handling the requests and information is retrieved from the external
 
 MySQL was chosen to store the information as it is widely used, hence this project could easily be maintained in the future. Performance wise, MySQL might be overkill for this project at the start, but should be solid solution for long time while scaling up. In case this API would have 'a lot' requests per seconds, Elastic Search would become feasible solution.
 
+Live API
+`https://riski.business/vatApi`
 
 **API**
 ----
