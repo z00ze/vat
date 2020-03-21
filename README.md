@@ -21,7 +21,8 @@ Live API
 
 **To do**
 ----
-Better error reporting
+Better documentation<br />
+Better error reporting<br />
 Adding more expection handlings
 
 **API Documentation**
