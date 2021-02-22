@@ -67,10 +67,6 @@ class ValidatorService(object):
             
         return {"city":"","name":"","address":"","postcode":"","updatedOn":"","vatNumber":"","countryCode":"","requestDate":"","error": {"is_error": True, "reason": "Path", "info": "Path is wrong."}}
         
-            
-    
-        
-
 
 if __name__ == "__main__":
     """ Cherrypy config and startup.
